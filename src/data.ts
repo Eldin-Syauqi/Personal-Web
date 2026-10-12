@@ -173,12 +173,12 @@ export const testimonials = [
   {
     name: "Glenn",
     role: "team mate",
-    quote: "professional dan tampan",
+    quote: "Professional dan tampan",
   },
   {
-    name: "fatima louis",
+    name: "Fatima louis",
     role: "Mentor",
-    quote: "he is game changer and good role model",
+    quote: "He is game changer and good role model",
   },
 ];
 

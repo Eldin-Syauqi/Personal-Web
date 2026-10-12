@@ -1,9 +1,22 @@
-export default function SectionTitle({ title, subtitle }: { title: string; subtitle?: string }) {
+export default function SectionTitle({
+  eyebrow,
+  title,
+  subtitle,
+}: {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+}) {
   return (
-    <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold mb-2">{title}</h2>
-      <div className="w-16 h-1 bg-primary mx-auto rounded-full"></div>
-      {subtitle && <p className="mt-4 opacity-70 max-w-2xl mx-auto">{subtitle}</p>}
+    <div className="mb-14 text-center">
+      {eyebrow && (
+        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-700 dark:text-purple-300">
+          {eyebrow}
+        </p>
+      )}
+      <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-500" />
+      {subtitle && <p className="mx-auto mt-4 max-w-2xl opacity-70">{subtitle}</p>}
     </div>
   );
 }
